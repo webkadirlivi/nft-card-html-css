@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@200&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body{
+    height: 100vh;
+    line-height: 1.4;
+    font-family: 'Sono', sans-serif;
+    background-color:aqua ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nft-card{
+    width: 400px;
+    text-align: center;
+    background-color: #121212;
+    border-radius: 10px;
+    overflow: hidden;
+    color: #fff;
+}
+
+.card-header{
+    padding: 30px 20px;
+}
+
+.nft-pic{
+    display: inline-block;
+    padding: 8px;
+    margin: auto;
+    background: linear-gradient(130deg, #4397eb, #e45959);
+    background-size: 200% 200%;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    animation: rgb 3s linear infinite;
+}
+
+@keyframes rgb {
+    25%{
+        background-position: left bottom;
+    }
+    50%{
+        background-position: right bottom;
+    }
+    75%{
+        background-position: right top;
+    }
+    100%{
+        background-position: left top;
+    }
+}
+
+.nft-pic img{
+    display: inline;
+    width: 300px;
+    height: 300px;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+}
+
+.nft-name{
+    text-transform: uppercase ;
+    letter-spacing: 0.7em;
+    margin: 10px 0;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.nft-desc{
+    margin: 0 8px;
+}
+
+.nft-price{
+    display: flex;
+    justify-content: space-between;
+    padding: 26px 0;
+    margin: 0 20px;
+}
+
+.nft-price span{
+   border-radius: 8px;
+   padding: 10px 10px;
+   border: 2px solid #74b9ff;
+   transition: all 0.3s ease;
+}
+
+.nft-price span:hover{
+    background-color: #74b9ff;
+}
+
+hr{
+    display: inline-block;
+    width: 290px;
+}
+
+.buttons{
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons > div{
+    float: left;
+    padding: 10px 5px;
+}
+
+.btn{
+    display: inline-block;
+    color: #fff;
+    padding: 5px 5px;
+    border-radius: 8px;
+    border: 2px solid #74b9ff;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    background-color: #74b9ff;
+}
+
+.nft-creator{
+    margin-left: 20px;
+}
+
+
